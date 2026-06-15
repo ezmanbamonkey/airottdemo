@@ -1,0 +1,12 @@
+{
+  "name": "web-platform",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix cms run dev",
+    "build": "npm --prefix cms run build",
+    "lint": "npm --prefix cms run lint",
+    "db:up": "docker-compose up -d",
+    "db:down": "docker-compose down",
+    "dev:with-db": "npm run db:up && npm run dev"
+  }
+}
